@@ -21,6 +21,6 @@ public class CarExample {
         System.out.println("car4.company : " + car4.company);
         System.out.println("car4.model : " + car4.model);
         System.out.println("car4.color :  " + car4.color);
-        System.out.println();
+        System.out.println("car4.maxSpeed : " + car4.maxSpeed);
     }
 }

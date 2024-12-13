@@ -1,6 +1,6 @@
 package ygh.sec03.exam01;
 
-package class Car {
+public class Car {
     Car(String color, int cc) {
     }
 }
