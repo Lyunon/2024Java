@@ -3,18 +3,19 @@ package ygh.sec01.exam01;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Button callButton = new Button();
-		CallListener callListener = new CallListener();
-		callButton.SetOnClickListener(callListener);
-		callButton.SetOnClickListener(new CallListener());
-		callButton.Touch();
+		A a = new A();
 		
-		Button messageButton = new Button();
-		MessageListener MessageListener = new MessageListener();
-		callButton.SetOnClickListener(MessageListener);
-		callButton.SetOnClickListener(new MessageListener());
-		callButton.Touch();
+		A.B b = a.new B();
+		b.field1 = 3;
+		b.method1();
+
+		A.C c = new A.C();
+		c.field1 = 3;
+		c.method1();
+		A.C.field2 = 3;
+		A.C.method2();
+
+		a.method();
 	}
 
 }
